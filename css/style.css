@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Roboto:wght@100;300;500;900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+/* ---------- RESET --------- */
+
+* {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #DAC4F7 !important;
+}
+
+/* ---------- HEADER --------- */
+nav {
+    height: 90px;
+    background-color: #392F5A;
+}
+nav > div {
+    background-color: #392F5A;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+    width: 100%;
+}
+
+header {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+}
+
+.navbar-brand {
+    padding: 5px;
+    width: 3.5vw;
+    height: 59px;
+}
+.navbar-brand img {
+    height: 100%;
+}
+
+.nav-link {
+    color: #DAC4F7 !important;
+}
+.nav-link:hover {
+    color: #82c214 !important;
+}
+.nav-link i {
+    font-size: 3rem;
+}
+.nav-link img {
+    margin: 0 10px;
+}
+
+.navbar-toggler {
+    border-color: #DAC4F7 !important;
+}
+.navbar-toggler-icon {
+    height: auto !important;
+    font-size: 3rem;
+    background-image: none !important;
+    color: #DAC4F7 !important;
+}
+
+/* ---------- MAIN --------- */
+
+main {
+    background-color: #DAC4F7;
+}
+
+.carousel {
+    overflow: hidden;
+    height: 100vh;
+}
+.carousel img {
+    min-width: 1300px;
+    min-height: 100vh;
+}
+.title-container{
+    background-color: transparent;
+    z-index: 1;
+    top: 40vh;
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+}
+.carousel h1 {
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    color: #82c214;
+    text-align: center;
+    background-color: transparent;
+    font-size: 10rem;
+}
+
+main img {
+    width: 100%;
+}
+
+.seccion-texto {
+    padding: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 20vw;
+    row-gap: 4vh;
+    column-gap: 4vh;
+}
+
+.seccion-texto picture {
+    overflow: hidden;
+}
+.seccion-texto div {
+    font-size: 1.5vw;
+}
+.seccion-texto h2 {
+    font-size: 3.5vw;
+}
+
+/* ---------- CONOCENOS --------- */
+
+.conocenos-main {
+    padding-top: 90px;
+}
+
+.conocenos-main h2 {
+    font-size: 3.5vw;
+    margin-top: 3vw;
+    text-align: center;
+    color: #392F5A;
+}
+
+.conocenos-lista {
+    padding: 4vw;
+    display: grid;
+    grid-template-columns: repeat(4, 20vw);
+    column-gap: 4vw;
+    row-gap: 4vw;
+    grid-auto-rows: 40vw;
+}
+
+.conocenos-tarjeta {
+    border: 1px solid #392F5A;
+    -webkit-box-shadow: 10px 10px 5px 0px #392F5A;
+    -moz-box-shadow: 10px 10px 5px 0px #392F5A;
+    box-shadow: 10px 10px 5px 0px #392F5A;
+}
+
+.conocenos-tarjeta picture {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 18vw;
+}
+.conocenos-tarjeta picture img {
+    height: 100%;
+}
+.conocenos-tarjeta h3 {
+    text-decoration: underline;
+    font-size: 3.5vw;
+    margin: 0;
+    height: 4.5vw;
+    text-align: center;
+}
+.conocenos-tarjeta p {
+    font-size: 1.5vw;
+    padding: 0 1vw;
+    margin: 0;
+    height: 12vw;
+}
+.conocenos-tarjeta a {
+    display: inline-block;
+    height: 5vw;
+    font-size: 4vw;
+    color: #392F5A;
+}
+.conocenos-tarjeta a:hover {
+    color: #82c214;
+}
+
+.conocenos-tarjeta div {
+    padding-right: 1vw;
+    text-align: right;
+}
+
+/* ---------- CONTACTANOS --------- */
+
+.contactanos-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    min-height: 70vw;
+    padding-top: 90px;
+    background-color: #DAC4F7;
+}
+
+.contactanos-main form {
+    padding: 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3vw;
+    row-gap: 1vw;
+    background-color: #392F5A;
+    height: 50vw;
+    width: 60VW;
+}
+.contactanos-main form h1 {
+    color: #DAC4F7;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+    grid-column: 1/3;
+    font-size: 3.5vw;
+    margin-bottom: 2vw;
+}
+.contactanos-main form label {
+    font-size: 1.5VW;
+    text-align: right;
+    color: #DAC4F7;
+}
+.contactanos-main form button {
+    margin: 0 22.5VW;
+    margin-top: 2vw;
+    grid-column: 1/3;
+    font-size: 1.5VW;
+}
+.contactanos-main form button:hover {
+    background-color: #82c214;
+}
+.contactanos-main form input, textarea, button {
+    font-size: 1.5VW;
+    border: none;
+    outline: none;
+    padding: 0.1vw;
+    background-color: #DAC4F7;
+    color: #392F5A;
+}
+.contactanos-main form input, textarea, label {
+    height: 3vw;
+    width: 25.5vw;
+}
+.contactanos-main form textarea {
+    height: 15vw;
+}
+
+/* ---------- FOOTER --------- */
+
+footer {
+    height: 90px;
+    background-color: #392F5A;
+}
+
+footer div {
+    padding-top: 10px;
+    text-align: center;
+    display: block;
+}
+.footer-links a {
+    text-decoration: none;
+}
+.footer-links a i {
+    margin: auto 5px;
+    color: #DAC4F7;
+}
+.footer-links a i:hover {
+    color: #82c214;
+}
+.footer-legal a {
+    text-decoration: none;
+    color: #DAC4F7;
+    font-size: 16px;
+    display: inline-block;
+}
+.footer-legal a:hover {
+    color: #82c214;
+}
+.footer-legal i {
+    color: gray;
+    margin: -0.5vw;
+    font-size: 16px;
+}
