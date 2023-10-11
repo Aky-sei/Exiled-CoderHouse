@@ -1,0 +1,23 @@
+main {
+    background-color: $color-texto;
+    img {
+        width: 100%;
+    }
+    .seccion-texto {
+        padding: 5vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 20vw;
+        row-gap: 4vh;
+        column-gap: 4vh;
+        picture {
+            overflow: hidden;
+        }
+        div {
+            font-size: 1.5vw;
+            h2 {
+                font-size: 3.5vw;
+            }
+        }
+    }
+}

@@ -286,31 +286,31 @@ main img {
     -moz-box-shadow: 5px 5px 2.5px 0px #392F5A;
     box-shadow: 5px 5px 2.5px 0px #392F5A;
 }
-.productoa {
+.producto1 {
     grid-area: a;
 }
-.productob {
+.producto2 {
     grid-area: b;
 }
-.productoc {
+.producto3 {
     grid-area: c;
 }
-.productod {
+.producto4 {
     grid-area: d;
 }
-.productoe {
+.producto5 {
     grid-area: e;
 }
-.productof {
+.producto6 {
     grid-area: f;
 }
-.productog {
+.producto7 {
     grid-area: g;
 }
-.productoh {
+.producto8 {
     grid-area: h;
 }
-.productoi {
+.producto9 {
     grid-area: i;
 }
 
@@ -564,6 +564,3 @@ footer div {
         height: 31.5vw;
     }
 }
-@media screen and (min-width : 350px) {
-
-} 

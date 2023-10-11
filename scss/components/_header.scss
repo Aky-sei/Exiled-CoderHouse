@@ -1,0 +1,12 @@
+header {
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    nav {
+        height: 90px;
+        background-color: $color-secundario;
+        div {
+            background-color: $color-secundario;
+        }
+    }
+}

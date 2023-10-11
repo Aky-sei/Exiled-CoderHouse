@@ -1,0 +1,61 @@
+.conocenos-main {
+    padding-top: 90px;
+    h2 {
+        font-size: 3.5vw;
+        margin-top: 3vw;
+        text-align: center;
+        color: $color-secundario;
+        text-decoration: underline;
+    }
+    section {
+        padding: 4vw;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 4vw;
+        row-gap: 4vw;
+        grid-auto-rows: 40vw;
+        > div {
+            border: 1px solid $color-secundario;
+            -webkit-box-shadow: 10px 10px 5px 0px $color-secundario;
+            -moz-box-shadow: 10px 10px 5px 0px $color-secundario;
+            box-shadow: 10px 10px 5px 0px $color-secundario;
+            picture {
+                display: block;
+                overflow: hidden;
+                width: 100%;
+                height: 18vw;
+                img {
+                    height: 100%;
+                }
+            }
+            h3 {
+                text-decoration: underline;
+                font-size: 3.5vw;
+                margin: 0;
+                height: 4.5vw;
+                text-align: center;
+            }
+            p {
+                font-size: 1.5vw;
+                padding: 0 1vw;
+                margin: 0;
+                height: 12vw;
+            }
+            div {
+                position: relative;
+                bottom: 0;
+                padding-right: 1vw;
+                text-align: right;
+                a {
+                    display: inline-block;
+                    height: 5vw;
+                    font-size: 4vw;
+                    color: $color-secundario;
+                }
+                a:hover {
+                    color: $color-principal;
+                }
+            }
+        }
+    }
+}

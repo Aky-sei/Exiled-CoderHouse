@@ -1,0 +1,51 @@
+.unetenos-main {
+    height: calc(100vh - 90px);
+    min-height: 70vw;
+    padding-top: 90px;
+    background-color: $color-texto;
+    h1 {
+
+    }
+    p {
+
+    }
+    section {
+        .unetenos-discord {
+            padding: 5vw;
+            height: 30vw;
+            display: grid;
+            column-gap: 5vw;
+            grid-template-columns: 1fr 2fr;
+            h2 {
+                font-size: 3.5VW;    
+                padding: 3vw 0;
+                margin-bottom: 0;
+                text-align: center;
+            }
+            picture {
+                overflow: hidden;
+            }
+        }
+        > h2 {
+            margin: 0 10vw;
+            text-align: center;
+            font-size: 3.5VW;
+        }
+        .unetenos-tarjetas {
+            padding: 5vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 5vw;
+            column-gap: 5vw;
+            grid-auto-rows: 22vw;
+            a {
+                overflow: hidden;
+            }
+            a:hover {
+                -webkit-box-shadow: 5px 5px 2.5px 0px #392F5A;
+                -moz-box-shadow: 5px 5px 2.5px 0px #392F5A;
+                box-shadow: 5px 5px 2.5px 0px #392F5A;
+            }
+        }
+    }
+}

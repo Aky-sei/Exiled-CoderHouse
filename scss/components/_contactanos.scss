@@ -1,0 +1,56 @@
+.contactanos-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 90px);
+    min-height: 70vw;
+    padding-top: 90px;
+    background-color: $color-texto;
+    form {
+        padding: 3vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3vw;
+        row-gap: 1vw;
+        background-color: $color-secundario;
+        height: 50vw;
+        width: 60VW;
+        h1 {
+            color: $color-texto;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+            grid-column: 1/3;
+            font-size: 3.5vw;
+            margin-bottom: 2vw;
+        }
+        label {
+            font-size: 1.5VW;
+            text-align: right;
+            color: $color-texto;
+        }
+        button {
+            margin: 0 22.5VW;
+            margin-top: 2vw;
+            grid-column: 1/3;
+            font-size: 1.5VW;
+        }
+        button:hover {
+            background-color: $color-principal;
+        }
+        input, textarea, button {
+            font-size: 1.5VW;
+            border: none;
+            outline: none;
+            padding: 0.1vw;
+            background-color: $color-texto;
+            color: $color-secundario;
+        }
+        input, textarea, label {
+            height: 3vw;
+        }
+        textarea {
+            height: 15vw;
+        }
+    }
+}

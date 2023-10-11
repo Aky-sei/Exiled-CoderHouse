@@ -1,0 +1,188 @@
+@media screen and (max-width : 767.98px) {
+    /* ---MAIN--- */
+    main {
+        .seccion-texto {
+            grid-template-columns: 1fr;
+            grid-template-rows: 20vw 40vw 20vw 40vw 20vw 40vw;
+            div {
+                font-size: 2.1vw;
+                h2 {
+                    font-size: 5vw;
+                }
+            }
+        }
+        .seccion-texto :nth-child(2) {
+            grid-area: 1;
+        }
+        .seccion-texto :nth-child(6) {
+            grid-area: 5;
+        }
+    }
+    /* ---CONOCENOS--- */
+    .conocenos-main {
+        h2 {
+            font-size: 5vw;
+        }
+        section {
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 56vw;
+            > div {
+                picture {
+                    height: 26vw;
+                }
+                h3 {
+                    font-size: 5vw;
+                    height: 6.3vw;
+                }
+                p {
+                    font-size: 2.1vw;
+                    height: 16vw;
+                }
+                a {
+                    height: 7vw;
+                    font-size: 5.6vw;
+                }
+            }
+        }
+    }
+    /* ---PRODUCTOS--- */
+    .productos-main {
+        min-height: 126vw;
+        h1 {
+            font-size: 5vw;
+        }
+        section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: calc((85vw)/4);
+            grid-template-areas: 
+            "a b b c"
+            "a d e f"
+            "a i e f"
+            "h h g g";
+        }  
+    }  
+    /* ---CONTACTANOS--- */
+    .contactanos-main {
+        form {
+        height: 66vw;
+        width: 80VW;
+            h1 {
+                font-size: 5vw;
+            }
+            label {
+                font-size: 2.1VW;
+            }
+            button {
+                margin: 0 30VW;
+                font-size: 2.1VW;
+            }
+            input, textarea, button {
+                font-size: 2.1VW;
+            }
+            input, textarea, label {
+                height: 4vw;
+            }
+            textarea {
+                height: 20vw;
+            }
+        }
+    }
+}
+@media screen and (max-width : 575.98px) {
+    /* ---MAIN--- */
+    .title-container h1{
+        font-size: 5rem;
+    }
+    main {
+        .seccion-texto {
+            grid-template-rows: auto;
+            grid-auto-rows: 40vw;
+            padding: 2vh;
+            div {
+                font-size: 3.5vw;
+                h2 {
+                    font-size: 7vw
+                }
+            }
+        }
+    }
+    /* ---CONOCENOS--- */
+    .conocenos-main {
+        h2 {
+            font-size: 7.8vw;
+        }
+        section {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: 88vw;
+            > div {
+                picture {
+                    height: 40vw;
+                }
+                h3 {
+                    font-size: 7.8vw;
+                    height: 10vw;
+                }
+                p {
+                    font-size: 3.3vw;
+                    height: 25vw;
+                }
+                div {
+                    a {
+                        height: 11vw;
+                        font-size: 8.8vw;
+                    }
+                }
+            }
+        }
+    }
+    /* ---PRODUCTOS--- */
+    .productos-main {
+        min-height: 315vw;
+        h1 {
+            margin: auto 2vw;
+            margin-top: 2vw;
+            font-size: 7.5vw;
+        }
+        section {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-rows: calc((85vw)/2);
+            grid-template-areas: 
+            "a a"
+            "b c"
+            "d e"
+            "f f"
+            "g h"
+            "i i";
+        }
+    }
+    /* ---CONTACTANOS--- */
+    .contactanos-main {
+        form {
+            padding: 3vw 1vw;
+            column-gap: 1vw;
+            grid-template-columns: 2fr 1fr;
+            height: 103vw;
+            width: 90VW;
+            h1 {
+                font-size: 7.5vw;
+            }
+            label {
+                font-size: 3.1VW;
+            }
+            button {
+                margin: 0 33VW;
+                font-size: 3.3VW;
+            }
+            input, textarea, button {
+                font-size: 3.3VW;
+            }
+            input, textarea, label {
+                height: 6.2vw;
+            }
+            textarea {
+                height: 31.5vw;
+            }
+        }
+    }
+}

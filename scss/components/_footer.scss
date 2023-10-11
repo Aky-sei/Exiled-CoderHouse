@@ -1,0 +1,38 @@
+footer {
+    height: 90px;
+    background-color: $color-secundario;
+    div {
+        padding-top: 10px;
+        text-align: center;
+        display: block;
+    }
+    .footer-links {
+        a {
+            text-decoration: none;
+            i {
+                margin: auto 5px;
+                color: $color-texto;  
+            }
+            i:hover {
+                color: $color-principal;
+            }
+        }
+    }
+    .footer-legal {
+        a {
+            text-decoration: none;
+            color: $color-texto;
+            font-size: 16px;
+            display: inline-block;
+            margin-bottom: -1vw;
+        }
+        a:hover {
+            color: $color-principal;
+        }
+        i {
+            color: gray;
+            margin: -0.5vw;
+            font-size: 16px;
+        }
+    }
+}
