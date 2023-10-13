@@ -99,10 +99,10 @@ main {
 
 .conocenos-main {
   padding-top: 90px; }
-  .conocenos-main h2 {
-    font-size: 3.5vw;
+  .conocenos-main h1 {
     margin-top: 3vw;
     text-align: center;
+    font-size: 3.5vw;
     color: #392F5A;
     text-decoration: underline; }
   .conocenos-main section {
@@ -124,9 +124,10 @@ main {
         height: 18vw; }
         .conocenos-main section > div picture img {
           height: 100%; }
-      .conocenos-main section > div h3 {
-        text-decoration: underline;
+      .conocenos-main section > div h2 {
         font-size: 3.5vw;
+        color: #392F5A;
+        text-decoration: underline;
         margin: 0;
         height: 4.5vw;
         text-align: center; }
@@ -144,7 +145,8 @@ main {
           display: inline-block;
           height: 5vw;
           font-size: 4vw;
-          color: #392F5A; }
+          color: #392F5A;
+          text-decoration: none; }
         .conocenos-main section > div div a:hover {
           color: #82c214; }
 
@@ -166,32 +168,32 @@ main {
     height: 50vw;
     width: 60VW; }
     .contactanos-main form h1 {
+      font-size: 3.5vw;
       color: #DAC4F7;
       text-decoration: underline;
       display: block;
       text-align: center;
       grid-column: 1/3;
-      font-size: 3.5vw;
       margin-bottom: 2vw; }
     .contactanos-main form label {
       font-size: 1.5VW;
+      height: 3vw;
       text-align: right;
       color: #DAC4F7; }
-    .contactanos-main form button {
-      margin: 0 22.5VW;
-      margin-top: 2vw;
-      grid-column: 1/3;
-      font-size: 1.5VW; }
     .contactanos-main form button:hover {
       background-color: #82c214; }
-    .contactanos-main form input, .contactanos-main form textarea, .contactanos-main form button {
+    .contactanos-main form .button-style, .contactanos-main form button, .contactanos-main form input, .contactanos-main form textarea {
       font-size: 1.5VW;
       border: none;
       outline: none;
       padding: 0.1vw;
       background-color: #DAC4F7;
       color: #392F5A; }
-    .contactanos-main form input, .contactanos-main form textarea, .contactanos-main form label {
+    .contactanos-main form button {
+      margin: 0 22.5VW;
+      margin-top: 2vw;
+      grid-column: 1/3; }
+    .contactanos-main form input {
       height: 3vw; }
     .contactanos-main form textarea {
       height: 15vw; }
@@ -204,14 +206,14 @@ main {
     margin-bottom: 0;
     margin-top: 3vw;
     text-align: center;
-    color: #392F5A;
     font-size: 3.5vw;
+    color: #392F5A;
     text-decoration: underline; }
   .productos-main section {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-auto-rows: calc(85vw/5);
-    grid-template-areas: "a b b c c" "a d e e e" "a d f f g" "h h f f i";
+    grid-template-areas: "a b b c c" "d d f f g" "d d f f g" "h e f f i";
     row-gap: 1vw;
     column-gap: 1vw;
     padding: 5vw; }
@@ -222,30 +224,35 @@ main {
       -webkit-box-shadow: 5px 5px 2.5px 0px #392F5A;
       -moz-box-shadow: 5px 5px 2.5px 0px #392F5A;
       box-shadow: 5px 5px 2.5px 0px #392F5A; }
-    .productos-main section .producto1 {
+    .productos-main section .productoa {
       grid-area: a; }
-    .productos-main section .producto2 {
+    .productos-main section .productob {
       grid-area: b; }
-    .productos-main section .producto3 {
+    .productos-main section .productoc {
       grid-area: c; }
-    .productos-main section .producto4 {
+    .productos-main section .productod {
       grid-area: d; }
-    .productos-main section .producto5 {
+    .productos-main section .productoe {
       grid-area: e; }
-    .productos-main section .producto6 {
+    .productos-main section .productof {
       grid-area: f; }
-    .productos-main section .producto7 {
+    .productos-main section .productog {
       grid-area: g; }
-    .productos-main section .producto8 {
+    .productos-main section .productoh {
       grid-area: h; }
-    .productos-main section .producto9 {
+    .productos-main section .productoi {
       grid-area: i; }
 
 .unetenos-main {
-  height: calc(100vh - 90px);
-  min-height: 70vw;
   padding-top: 90px;
   background-color: #DAC4F7; }
+  .unetenos-main h1 {
+    margin-bottom: 0;
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 3.5vw;
+    color: #392F5A;
+    text-decoration: underline; }
   .unetenos-main section .unetenos-discord {
     padding: 5vw;
     height: 30vw;
@@ -318,14 +325,14 @@ footer {
   main .seccion-texto :nth-child(6) {
     grid-area: 5; }
   /* ---CONOCENOS--- */
-  .conocenos-main h2 {
+  .conocenos-main h1 {
     font-size: 5vw; }
   .conocenos-main section {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 56vw; }
     .conocenos-main section > div picture {
       height: 26vw; }
-    .conocenos-main section > div h3 {
+    .conocenos-main section > div h2 {
       font-size: 5vw;
       height: 6.3vw; }
     .conocenos-main section > div p {
@@ -343,7 +350,7 @@ footer {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-auto-rows: calc((85vw)/4);
-      grid-template-areas: "a b b c" "a d e f" "a i e f" "h h g g"; }
+      grid-template-areas: "g b b a" "g d f f" "e i f f" "h h c c"; }
   /* ---CONTACTANOS--- */
   .contactanos-main form {
     height: 66vw;
@@ -360,7 +367,15 @@ footer {
     .contactanos-main form input, .contactanos-main form textarea, .contactanos-main form label {
       height: 4vw; }
     .contactanos-main form textarea {
-      height: 20vw; } }
+      height: 20vw; }
+  /* ---UNETENOS--- */
+  .unetenos-main h1 {
+    font-size: 5vw; }
+  .unetenos-main section .unetenos-discord h2 {
+    padding: 2.5vw 0;
+    font-size: 4vw; }
+  .unetenos-main section h2 {
+    font-size: 4vw; } }
 
 @media screen and (max-width: 575.98px) {
   /* ---MAIN--- */
@@ -401,7 +416,7 @@ footer {
     .productos-main section {
       grid-template-columns: repeat(2, 1fr);
       grid-auto-rows: calc((85vw)/2);
-      grid-template-areas: "a a" "b c" "d e" "f f" "g h" "i i"; }
+      grid-template-areas: "b b" "a f" "d e" "c c" "g h" "g i"; }
   /* ---CONTACTANOS--- */
   .contactanos-main form {
     padding: 3vw 1vw;

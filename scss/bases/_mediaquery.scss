@@ -20,7 +20,7 @@
     }
     /* ---CONOCENOS--- */
     .conocenos-main {
-        h2 {
+        h1 {
             font-size: 5vw;
         }
         section {
@@ -30,7 +30,7 @@
                 picture {
                     height: 26vw;
                 }
-                h3 {
+                h2 {
                     font-size: 5vw;
                     height: 6.3vw;
                 }
@@ -56,10 +56,10 @@
             grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: calc((85vw)/4);
             grid-template-areas: 
-            "a b b c"
-            "a d e f"
-            "a i e f"
-            "h h g g";
+            "g b b a"
+            "g d f f"
+            "e i f f"
+            "h h c c";
         }  
     }  
     /* ---CONTACTANOS--- */
@@ -85,6 +85,23 @@
             }
             textarea {
                 height: 20vw;
+            }
+        }
+    }
+    /* ---UNETENOS--- */
+    .unetenos-main {
+        h1 {
+            font-size: 5vw;
+        }
+        section {
+            .unetenos-discord {
+                h2 {
+                    padding: 2.5vw 0;
+                    font-size: 4vw;
+                }
+            }
+            h2 {
+                font-size: 4vw; 
             }
         }
     }
@@ -148,12 +165,12 @@
             grid-template-columns: repeat(2, 1fr);
             grid-auto-rows: calc((85vw)/2);
             grid-template-areas: 
-            "a a"
-            "b c"
+            "b b"
+            "a f"
             "d e"
-            "f f"
+            "c c"
             "g h"
-            "i i";
+            "g i";
         }
     }
     /* ---CONTACTANOS--- */

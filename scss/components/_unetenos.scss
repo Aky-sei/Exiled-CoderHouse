@@ -1,13 +1,11 @@
 .unetenos-main {
-    height: calc(100vh - 90px);
-    min-height: 70vw;
     padding-top: 90px;
     background-color: $color-texto;
     h1 {
-
-    }
-    p {
-
+        margin-bottom: 0;
+        margin-top: 3vw;
+        text-align: center;
+        @include text(3.5vw, $color-secundario, underline);
     }
     section {
         .unetenos-discord {
@@ -17,7 +15,7 @@
             column-gap: 5vw;
             grid-template-columns: 1fr 2fr;
             h2 {
-                font-size: 3.5VW;    
+                font-size: 3.5VW;
                 padding: 3vw 0;
                 margin-bottom: 0;
                 text-align: center;

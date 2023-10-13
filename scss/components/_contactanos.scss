@@ -16,29 +16,22 @@
         height: 50vw;
         width: 60VW;
         h1 {
-            color: $color-texto;
-            text-decoration: underline;
+            @include text(3.5vw, $color-texto, underline);
             display: block;
             text-align: center;
             grid-column: 1/3;
-            font-size: 3.5vw;
             margin-bottom: 2vw;
         }
         label {
             font-size: 1.5VW;
+            height: 3vw;
             text-align: right;
             color: $color-texto;
-        }
-        button {
-            margin: 0 22.5VW;
-            margin-top: 2vw;
-            grid-column: 1/3;
-            font-size: 1.5VW;
         }
         button:hover {
             background-color: $color-principal;
         }
-        input, textarea, button {
+        .button-style {
             font-size: 1.5VW;
             border: none;
             outline: none;
@@ -46,10 +39,18 @@
             background-color: $color-texto;
             color: $color-secundario;
         }
-        input, textarea, label {
+        button {
+            @extend .button-style;
+            margin: 0 22.5VW;
+            margin-top: 2vw;
+            grid-column: 1/3;
+        }
+        input {
+            @extend .button-style;
             height: 3vw;
         }
         textarea {
+            @extend .button-style;
             height: 15vw;
         }
     }

@@ -6,9 +6,7 @@
         margin-bottom: 0;
         margin-top: 3vw;
         text-align: center;
-        color: #392F5A;
-        font-size: 3.5vw;
-        text-decoration: underline;
+        @include text(3.5vw, $color-secundario, underline);
     }
     section {
         display: grid;
@@ -16,9 +14,9 @@
         grid-auto-rows: calc(85vw/5);
         grid-template-areas: 
             "a b b c c"
-            "a d e e e"
-            "a d f f g"
-            "h h f f i";
+            "d d f f g"
+            "d d f f g"
+            "h e f f i";
         row-gap: 1vw;
         column-gap: 1vw;
         padding: 5vw;
@@ -31,32 +29,10 @@
             -moz-box-shadow: 5px 5px 2.5px 0px #392F5A;
             box-shadow: 5px 5px 2.5px 0px #392F5A;
         }
-        .producto1 {
-            grid-area: a;
-        }
-        .producto2 {
-            grid-area: b;
-        }
-        .producto3 {
-            grid-area: c;
-        }
-        .producto4 {
-            grid-area: d;
-        }
-        .producto5 {
-            grid-area: e;
-        }
-        .producto6 {
-            grid-area: f;
-        }
-        .producto7 {
-            grid-area: g;
-        }
-        .producto8 {
-            grid-area: h;
-        }
-        .producto9 {
-            grid-area: i;
+        @each $area in a, b, c, d, e, f, g, h, i {
+            .producto#{$area}{
+                grid-area: #{$area};
+            }
         }
     }
 }

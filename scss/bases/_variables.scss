@@ -1,3 +1,9 @@
 $color-principal: #82c214;
 $color-secundario: #392F5A;
 $color-texto: #DAC4F7;
+
+@mixin text($tamaño, $color, $decorado) {
+    font-size: $tamaño;
+    color: $color;
+    text-decoration: $decorado;
+}
